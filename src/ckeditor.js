@@ -31,6 +31,7 @@ import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 
 import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
 import Highlight from '@ckeditor/ckeditor5-highlight/src/highlight';
+import Font from '@ckeditor/ckeditor5-font/src/font';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -61,6 +62,7 @@ ClassicEditor.builtinPlugins = [
 
 	Alignment,
 	Highlight,
+	Font,
 ];
 
 // Editor configuration.
@@ -76,7 +78,7 @@ ClassicEditor.defaultConfig = {
 	toolbar: {
 		items: [
 			'heading',
-      '|', 'bold', 'italic', 'strikethrough', 'highlight', 'link',
+      '|', 'bold', 'italic', 'strikethrough', 'fontColor', 'highlight', 'link',
       '|', 'ckfinder', 'imageUpload',
       '|', 'alignment:left', 'alignment:center', 'alignment:right',
       '|', 'bulletedList', 'numberedList',
